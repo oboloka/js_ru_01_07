@@ -6,6 +6,7 @@ class CommentList extends Component {
         const { comments } = this.props;
         return (
             <ul>
+            {/*лучше не писать подобную логику прямо в JSX - выноси в переменную*/}
             {comments.map((comment) =>
                 <li key={comment.id}>
                     <i>{comment.user}</i>
