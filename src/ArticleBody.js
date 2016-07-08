@@ -16,6 +16,7 @@ class ArticleBody extends Component {
         const { article } = this.props;
         const { isOpenComments } = this.state;
         const date = new Date(article.date).toISOString().replace(/T/, ' ').replace(/\..+/, '')
+        //Эту логику лучше внести в CommentList
         const comments = isOpenComments ? <CommentList comments={article.comments}/> : null;
         const linkText = isOpenComments ? 'Hide comments' : 'Show comments';
 
