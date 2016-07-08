@@ -4,6 +4,7 @@ import ArticleBody from './ArticleBody';
 class Article extends Component {
     state = {
         isOpen: false,
+        //нигде не используется
         isShowComments: false
     }
 
